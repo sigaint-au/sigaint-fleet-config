@@ -9,9 +9,7 @@ spec:
     enabled: false
   insecureSkipTLSVerify: false
   paths:
-    - bundles/cert-manager
-    - bundles/external-secrets-operator
-    - bundles/external-secrets-operator-config
+    - bundles/*
   repo: https://git.sr.ht/~mhahl/sigaint-rke2
   targets:
     - clusterName: lan-rke2-dmz

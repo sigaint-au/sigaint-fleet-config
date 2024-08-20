@@ -9,6 +9,7 @@ targetCustomizations:
   kustomize:
     dir: overlays/lan-rke2-dmz
 helm:
+  takeOwnership: true
   repo: https://charts.bitnami.com/bitnami
   chart: cert-manager
   version: 1.3.17
