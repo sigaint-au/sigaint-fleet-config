@@ -1,0 +1,12 @@
+---
+defaultNamespace: external-secrets
+dependsOn: 
+    - name: "fleet-config-bundles-external-secrets-operator"
+targetCustomizations:
+- name: lan-rke2-dmz
+  clusterSelector:
+    matchLabels:
+      env: production
+      site: lanham
+  kustomize:
+    dir: overlays/lan-rke2-dmz
