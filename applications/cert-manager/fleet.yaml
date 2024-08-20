@@ -1,0 +1,4 @@
+---
+namespace: cert-manager
+helm:
+  chart: oci://registry-1.docker.io/bitnamicharts/cert-manager
