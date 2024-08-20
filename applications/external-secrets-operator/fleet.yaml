@@ -1,5 +1,11 @@
 ---
 defaultNamespace: external-secrets
+helm:
+  repo: https://charts.external-secrets.io
+  chart: external-secrets
+  values:
+    namespace: external-secrets
+    installCRDs: true
 targetCustomizations:
 - name: lan-rke2-dmz
   clusterSelector:
@@ -8,9 +14,3 @@ targetCustomizations:
       site: lanham
   kustomize:
     dir: overlays/lan-rke2-dmz
-helm:
-  repo: https://charts.external-secrets.io
-  chart: external-secrets
-  values:
-    namespace: external-secrets
-    installCRDs: true
