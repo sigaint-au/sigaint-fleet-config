@@ -1,5 +1,5 @@
 ---
-defaultNamespace: cert-manager
+defaultNamespace: external-secrets
 targetCustomizations:
 - name: lan-rke2-dmz
   clusterSelector:
