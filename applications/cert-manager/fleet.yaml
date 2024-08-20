@@ -1,13 +1,7 @@
 ---
 defaultNamespace: cert-manager
-targetCustomizations:
-- name: lan-rke2-dmz
-  clusterSelector:
-    matchLabels:
-      env: production
-      site: lanham
-  kustomize:
-    dir: overlays/lan-rke2-dmz
+kustomize:
+  dir: overlays/lan-rke2-dmz
 helm:
   repo: https://charts.bitnami.com/bitnami
   chart: cert-manager
