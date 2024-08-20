@@ -1,0 +1,9 @@
+namespace: fleet-
+targetCustomizations:
+- name: lan-rke2-dmz
+  clusterSelector:
+    matchLabels:
+      env: production
+      site: lanham
+  kustomize:
+    dir: clusters/lan-rke2-dmz
