@@ -1,6 +1,6 @@
 ---
 defaultNamespace: cert-manager
-kustomization:
+kustomize:
   dir: clusters/${.ClusterName}
 helm:
   repo: https://charts.bitnami.com/bitnami
