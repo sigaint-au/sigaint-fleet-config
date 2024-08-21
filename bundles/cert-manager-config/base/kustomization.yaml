@@ -1,0 +1,3 @@
+resources:
+    - cloudflare-secret.yaml
+    - cloudflare-issuer.yaml
